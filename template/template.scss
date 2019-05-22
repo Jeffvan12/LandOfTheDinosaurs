@@ -1,0 +1,201 @@
+// Setting up imports
+$primary-color: #a59656;
+$secondary-color: rgba(255, 255, 255, 0.527);
+$border-color: rgb(165,4,4);
+$snowymountainscolor : rgb(111, 200, 235);
+
+@font-face {
+	font-family: Aquifer;
+	src: url(../Fonts/Aquifer.ttf);
+}
+
+//Setting up the body of the website
+body {
+	margin: 0px;
+	background-image: url(../Images/Backgrounds/Goodgreenedit.png);
+	background-size: 40vw;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+//Setting up lists for the site
+ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+//Setting up the parts in the navigation bar
+nav {
+	font-family: "Aquifer";
+	height: 12vh;
+	background-color: $secondary-color;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	/* background-color: rgba(42, 104, 107, 0.589) ;  */
+	border-bottom-style: solid;
+}
+
+.logodiv {
+	color: black;
+	display: flex;
+	flex-direction: row;
+    align-items: center;
+	font-size: 5vh;
+
+	img {
+		height: 11vh;
+        width: auto;
+        &:hover{
+            cursor: grab;
+        }
+	}
+}
+
+/*!Removing margin from all h1 elements*/
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    font-family: Aquifer; 
+	justify-content: center;
+    color: $primary-color;
+    font-size: 3.5vh;
+    margin: 0 2vh;
+    padding: 1vh;
+    border-radius: 2vh;
+    background-color: black;
+    border: solid $border-color 0.5vh;
+    &:hover { 
+        color: #ceb751; 
+; 
+    }
+}
+
+/*!For the div that holds the main content on the page, i.e. the content in the centre */
+#maincontent { 
+    display: flex; 
+    flex-direction: column;
+    align-content: center; 
+    justify-content: center; 
+    flex: 1 0 auto; 
+    height: 84vh; 
+    background-color: rgba(50, 90, 102, 0.452); 
+}
+
+
+/*!Stylings for the footers*/
+//TODO increase font size 
+footer {
+    flex-shrink: 0;
+	display: flex;
+	text-align: center;
+	font-size: 2.2vh;
+	margin-top: auto;
+	height: 3.7vh;
+	color: $primary-color;
+	background-color: black;
+}
+
+.footerlist {
+    margin: 0;
+
+	li {
+		padding: 0 2vw;;
+	}
+}
+
+/*! CSS for the WORLD MAP, LOCATIONS and DINOSAUR screens */ 
+
+//Classes to make life easier 
+%maincontentimages{
+    display: flex;
+    flex-direction: column; 
+	justify-content: center;
+    align-items: center;
+    img {
+        align-self: center;
+        padding: 0; 
+        border-radius: 3vh;
+        border: 0.9vh $border-color solid;
+    }
+}
+
+%dinosaurcontent{
+    position: absolute; 
+    left:  5vh; 
+    bottom: 5vh;
+    right: 10vw; 
+    img {
+        height: 56vh;
+        padding: 0; 
+        border-radius: 3vh;
+        border: 0.9vh rgb(193, 193, 235) solid;
+    }
+}
+
+
+/*!Shading for when the dinosaur appears */
+.shade { 
+    width: 100%;
+    height: 84.4vh;
+    background: rgba(8, 36, 49, 0.589);
+    position: absolute;
+    top: 12vh;
+    left: 0;
+}
+
+
+/*! CSS for the world map part */
+#worldmap {
+    @extend %maincontentimages; 
+    border: 0.9vh $border-color solid;
+	margin: 0vh 10vh 0vh 10vh;
+    height: 74vh;
+    border-radius: 3vh;
+	background: radial-gradient(circle, rgba(192, 224, 239, 1) 45%, rgba(23, 126, 173, 1) 100%);
+
+	img {
+        height: 68vh;
+        border: none; 
+	}
+}
+
+
+
+/*! Snowy mountains CSS */
+
+/*! Location part */
+#snowymountainslocation {
+    @extend %maincontentimages;
+    height: 75vh; 
+    background-image: url(../Images/Locations/Snowy\ 1\ -\ Copy.jpg);
+    border-top: $snowymountainscolor solid 0.9vh;
+    border-bottom: $snowymountainscolor solid 0.9vh;
+    background-size: cover;
+    // margin: 0; 
+    // img { 
+    //     border-color: $snowymountainscolor;
+    //     height: 79vh; 
+    //     width: 85vw; 
+    // }
+}
+
+/*!Dinosaur part*/
+#snowymountainsdino { 
+    @extend %dinosaurcontent;
+    img {
+        border-color: $snowymountainscolor;
+    }        
+}
+
+
+

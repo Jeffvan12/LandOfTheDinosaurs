@@ -1,0 +1,20 @@
+@font-face {
+  font-family: Aquifer;
+  src: url("../Fonts/Aquifer.ttf"); }
+body {
+  margin: 0px;
+  background-image: url(Images/Backgrounds/Goodgreenedit.png);
+  background-size: 40vw; }
+
+.container {
+  display: flex;
+  flex-direction: column; }
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none; }
+
+/*# sourceMappingURL=output.css.map */

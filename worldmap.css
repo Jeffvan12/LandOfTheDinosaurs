@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Aquifer; 
+    src: url('/Fonts/Aquifer.ttf')
+}
+
+body { 
+    margin: 0px; 
+    background-image: url(Images/Backgrounds/Goodgreenedit.png);
+    background-size: 40vw;
+}
+
+.container{
+    display: flex; 
+    flex-direction: column; 
+}
+
+ul {
+    display : flex; 
+    flex-direction: row; 
+    align-content: center;
+    align-items: center; 
+    list-style : none; 
+}
+
+nav { 
+    font-family: 'Aquifer'; 
+    height: 12vh; 
+    background-color: rgba(255, 255, 255, 0.527);
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    /* background-color: rgba(42, 104, 107, 0.589) ;  */
+    border-bottom-style: solid;
+}
+
+.logodiv{
+    color : black; 
+    display:flex;
+    flex-direction: row; 
+    align-items: center; 
+    font-size: 5vh;
+}
+
+h1 {
+    margin : 0;
+}
+
+.logodiv img {
+    height: 11vh; 
+    width: auto; 
+}
+
+.navlist {
+    justify-content: center; 
+}
+.navlist li { 
+    color:#a59656;
+    font-size: 3.5vh; 
+    margin: 0 2vh; 
+    padding: 1vh; 
+    /* background-color: rgba(128, 128, 128, 0.459);  */
+    border-radius: 2vh;
+    background-color: black; 
+    border-style: solid;
+    border-color: rgb(196, 1, 1); 
+}
+
+.filler { 
+    display: flex; 
+    justify-content: center; 
+    align-content: center; 
+    height: 74vh; 
+    margin: 6vh 10vh 2vh 10vh;
+    border-style: solid; 
+    border-color: rgb(165, 4, 4) ; 
+    border-width: 1vh; 
+    border-radius: 3vh;
+    /* background-color: rgba(75, 130, 133, 0.349); */
+/* background-color: #c0e0efa2; */
+/* background: linear-gradient(to right,  #c0e0efa2, #177eada2); */
+background: radial-gradient(circle, rgba(192,224,239,1) 45%, rgba(23,126,173,1) 100%);
+    /* border-radius: 5vh;  */
+    /* background-color: rgba(255, 255, 255, 0.219);  */
+}
+
+.filler img {
+    height: 68vh;
+    align-self: center;
+}
+
+footer {
+    display:flex; 
+    text-align: center; 
+    font-size: 2.2vh;
+    margin-top: auto;  
+    height: 3.7vh; 
+    color: #a59656; 
+    background-color: black;
+}
+
+.footerlist {
+    margin: 0; 
+}
+
+.footerlist li {
+    padding: 0 30px; 
+}
+
