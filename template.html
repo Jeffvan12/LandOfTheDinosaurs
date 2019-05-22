@@ -27,13 +27,13 @@
 
         </div>
 
-        <template id="worldmaptemplate">
+        <!-- World map template  -->
+        <template id="wmt">
             <div id="worldmap">
                 <img id="mapping" src="/Images/worldmapedit.png" alt="World map picture" usemap="#worldmapmap">
             </div>
-
-        </template>
-
+        
+        <!-- Area tags for the world map -->
         <map name="worldmapmap">
             <area target="" alt="Area to click on to go to Out region" title="Out region" href="" id = "wmora"
                 coords="1020,2629,1033,2575,1060,2557,1073,2486,1109,2464,1131,2415,1184,2348,1238,2326,1273,2290,1305,2263,1305,2210,1260,2183,1273,2148,1247,2085,1171,2032,1122,2014,1060,1956,988,1969,971,1996,926,1983,873,1987,837,1992,850,1965,819,1943,806,1903,748,1898,775,1867,766,1818,761,1700,757,1604,793,1578,810,1595,877,1560,922,1480,939,1404,997,1399,1024,1395,1064,1328,508,923,516,976,454,1016,396,1039,365,1105,294,1116,232,1223,191,1346,178,1533,178,1662,111,1708,116,1788,80,1811,80,1886,116,1980,134,2060,151,2091,125,2154,142,2176,196,2211,240,2287,303,2376,312,2447,294,2492,312,2585,365,2755,392,2839,454,2866,516,2897,508,2946,512,3026,614,2991,663,3009,739,2995,788,2982,815,2991,855,2973,926,2960,962,2982,980,3013,1024,3000,1060,2968,1086,2951,1081,2862,1086,2795,1037,2777,993,2818,931,2818,971,2755,971,2684"
@@ -47,13 +47,21 @@
 
         </map>
 
-        <template id="smloct">
-            <div id="snowymountainslocation">
-                <!-- <img src="../Images/Locations/Snowy 1 - Copy.jpg" alt=""> -->
-            </div>
-            <div id="shader"></div>
         </template>
 
+        <!-- Snowy Mountains template -->
+        <template id="smloct">
+            <div id="sml">
+                <img src="Images/Locations/Snowy 1 - Copy.jpg" alt="" usemap="#smlmap" id="smmapping"> 
+            </div>
+            <div id="shader"></div>
+            <map name="smlmap">
+                    <area target="" alt="" title="" href="" coords="5699,1692,5724,1626,5740,1568,5724,1469,5650,1412,5584,1395,5485,1395,5378,1395,5362,1486,5362,1560,5378,1634,5386,1725,5395,1774,5403,1832,5477,1791" shape="poly">
+                    <area target="" alt="" title="" href="" coords="5197,1877,5205,1786,5213,1695,5263,1613,5255,1514,5123,1456,5057,1481,5007,1522,4983,1588,4942,1497,4892,1431,4843,1440,4736,1464,4694,1506,4629,1464,4571,1522,4579,1613,4596,1679,4587,1761,4587,1852,4645,1868,4769,1877,5024,1901" shape="poly">
+                </map>
+        </template>
+
+        <!-- Snowy Mountains dinosaur templte  -->
         <template id="smdinot">
             <div id="snowymountainsdino">
                 <img src="/Images/Locations/Snowy 2 Dino changed.jpg" alt="">
@@ -73,7 +81,9 @@
 
     </div>
     <script src="javascript/jquery.min.js"></script>
+    <!-- Used to place areas in the correct location, created by Matt Stow-->
     <script src="javascript/jquery.rwdImageMaps.min.js"></script>
+    <!-- Used to fill in area tags, created by David Lynch -->
     <script src="javascript/jquery.maphilight.min.js"></script>
     <script src="javascript/template.js"></script>
 </body>

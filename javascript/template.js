@@ -1,15 +1,18 @@
+// @ts-check
 //Initial loading of the world 
+
 let hovering = {
-    "wmsmloc": false,
-    "or": false,
+    "#wmsma": false,
+    "#wmora": false,
 }
+
 
 let currentLocation = "wm";
 
 document.addEventListener("DOMContentLoaded", () => {
     //Clearing the main section just in case there is something there, then loading the world map 
     clearMainSection();
-    loadScreenpart("worldmaptemplate");
+    loadScreenpart("wmt");
 
     //Loading the plugin that places html area tags in the right location for the world map section 
     $('img[usemap]').rwdImageMaps();
@@ -19,14 +22,18 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(function () {
             $('#mapping').maphilight();
         }, 500)
-    })
+    });
 
 
+    clickonloc("#wmsma", "smloct");
+    flashing("#wmsma", "000000", "666666", 500);
+    flashing("#wmora", "000000", "666666", 50);
+    hoverNew("#wmsma", "000000");
 });
 
 
 function flashing(element, startcolour, endcolour, interval) {
-    let state = 1;
+    let state = false;
     setInterval(function () {
         if (!hovering[element]) {
             if (state) {
@@ -46,13 +53,15 @@ function clickonloc(element, locationname) {
         clearMainSection();
         loadScreenpart(locationname);
         currentLocation = locationname;
+        $('img[usemap]').rwdImageMaps();
+        imageMapping("000000");
     });
 }
 
 
 function hoverNew(element, color) {
     $(element).hover(() => {
-        $("element").data('maphilight', { "stroke": false, "fillColor": color, "fillOpacity": 0.6, "alwaysOn": true });
+        $(element).data('maphilight', { "stroke": false, "fillColor": color, "fillOpacity": 0.6, "alwaysOn": true });
         $('#mapping').maphilight();
         hovering[element] = true;
     }, () => hovering[element] = false);
@@ -70,7 +79,7 @@ function loadScreenpart(templateID) {
 }
 
 function imageMapping(colour) {
-    $('#mapping').maphilight({
+    $('#smmapping').maphilight({
         stroke: true,
         strokeColor: '111111',
         // strokeOpacity: 0.5,
@@ -79,7 +88,7 @@ function imageMapping(colour) {
         fillColor: colour,
         fillOpacity: 1,
         alwaysOn: true,
-        wrapClass: 'map'
+        // wrapClass: 'map'
     });
 }
 

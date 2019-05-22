@@ -84,12 +84,12 @@ footer {
     padding: 0 2vw; }
 
 /*! CSS for the WORLD MAP, LOCATIONS and DINOSAUR screens */
-#worldmap, #snowymountainslocation {
+#worldmap, #sml {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  #worldmap img, #snowymountainslocation img {
+  align-items: center;
+  align-content: center; }
+  #worldmap img, #sml img {
     align-self: center;
     padding: 0;
     border-radius: 3vh;
@@ -128,12 +128,15 @@ footer {
 
 /*! Snowy mountains CSS */
 /*! Location part */
-#snowymountainslocation {
-  height: 75vh;
-  background-image: url(../Images/Locations/Snowy\ 1\ -\ Copy.jpg);
+#sml {
   border-top: #6fc8eb solid 0.9vh;
   border-bottom: #6fc8eb solid 0.9vh;
-  background-size: cover; }
+  margin: 0; }
+  #sml img {
+    border-radius: none;
+    border: none;
+    height: 79vh;
+    width: 100vw; }
 
 /*!Dinosaur part*/
 #snowymountainsdino img {

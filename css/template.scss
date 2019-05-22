@@ -64,6 +64,7 @@ h1 {
     padding: 0;
 }
 
+//TODO fix alginment of text in buttons 
 button {
     font-family: Aquifer; 
 	justify-content: center;
@@ -119,8 +120,9 @@ footer {
 %maincontentimages{
     display: flex;
     flex-direction: column; 
-	justify-content: center;
+	// justify-content: center;
     align-items: center;
+    align-content: center; 
     img {
         align-self: center;
         padding: 0; 
@@ -174,19 +176,19 @@ footer {
 /*! Snowy mountains CSS */
 
 /*! Location part */
-#snowymountainslocation {
+#sml {
     @extend %maincontentimages;
-    height: 75vh; 
-    background-image: url(../Images/Locations/Snowy\ 1\ -\ Copy.jpg);
+    // height: 75vh; 
     border-top: $snowymountainscolor solid 0.9vh;
     border-bottom: $snowymountainscolor solid 0.9vh;
-    background-size: cover;
-    // margin: 0; 
-    // img { 
-    //     border-color: $snowymountainscolor;
-    //     height: 79vh; 
-    //     width: 85vw; 
-    // }
+    margin: 0; 
+    img { 
+        border-radius: none;
+        border: none; 
+        height: 79vh; 
+        width: 100vw; 
+        // object-fit: cover; 
+    }
 }
 
 /*!Dinosaur part*/
