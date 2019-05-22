@@ -18,7 +18,7 @@ body {
 
 .container {
 	display: flex;
-	flex-direction: column;
+    flex-direction: column;
 }
 
 //Setting up lists for the site
@@ -30,7 +30,7 @@ ul {
 	list-style: none;
 }
 
-//Setting up the parts in the navigation bar
+/*!Setting up the parts in the navigation bar*/
 nav {
 	font-family: "Aquifer";
 	height: 12vh;
@@ -81,6 +81,14 @@ button {
     }
 }
 
+//Back button
+#backbutton { 
+    width: 10vw;
+    position: absolute;
+    top: 18vh; 
+    left: 7vw;
+}
+
 /*!For the div that holds the main content on the page, i.e. the content in the centre */
 #maincontent { 
     display: flex; 
@@ -120,11 +128,11 @@ footer {
 %maincontentimages{
     display: flex;
     flex-direction: column; 
-	// justify-content: center;
+	justify-content: center;
     align-items: center;
     align-content: center; 
     img {
-        align-self: center;
+        // align-self: center;
         padding: 0; 
         border-radius: 3vh;
         border: 0.9vh $border-color solid;
@@ -176,6 +184,7 @@ footer {
 /*! Snowy mountains CSS */
 
 /*! Location part */
+//TODO fix issue where background gets push to side and then repeats 
 #sml {
     @extend %maincontentimages;
     // height: 75vh; 
@@ -183,11 +192,12 @@ footer {
     border-bottom: $snowymountainscolor solid 0.9vh;
     margin: 0; 
     img { 
-        border-radius: none;
-        border: none; 
-        height: 79vh; 
+    // align-self: center;
+        height: 75vh;
         width: 100vw; 
-        // object-fit: cover; 
+        border-radius: 0;
+        border: none; 
+        object-fit: cover; 
     }
 }
 
@@ -198,6 +208,3 @@ footer {
         border-color: $snowymountainscolor;
     }        
 }
-
-
-

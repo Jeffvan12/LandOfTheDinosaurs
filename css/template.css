@@ -17,6 +17,7 @@ ul {
   align-items: center;
   list-style: none; }
 
+/*!Setting up the parts in the navigation bar*/
 nav {
   font-family: "Aquifer";
   height: 12vh;
@@ -57,6 +58,12 @@ button {
   button:hover {
     color: #ceb751; }
 
+#backbutton {
+  width: 10vw;
+  position: absolute;
+  top: 18vh;
+  left: 7vw; }
+
 /*!For the div that holds the main content on the page, i.e. the content in the centre */
 #maincontent {
   display: flex;
@@ -87,10 +94,10 @@ footer {
 #worldmap, #sml {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   align-content: center; }
   #worldmap img, #sml img {
-    align-self: center;
     padding: 0;
     border-radius: 3vh;
     border: 0.9vh #a50404 solid; }
@@ -133,10 +140,11 @@ footer {
   border-bottom: #6fc8eb solid 0.9vh;
   margin: 0; }
   #sml img {
-    border-radius: none;
+    height: 75vh;
+    width: 100vw;
+    border-radius: 0;
     border: none;
-    height: 79vh;
-    width: 100vw; }
+    object-fit: cover; }
 
 /*!Dinosaur part*/
 #snowymountainsdino img {
