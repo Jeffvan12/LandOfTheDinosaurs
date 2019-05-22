@@ -21,12 +21,11 @@ ul {
 nav {
   font-family: "Aquifer";
   height: 12vh;
-  background-color: rgba(255, 255, 255, 0.527);
+  background-color: rgba(216, 216, 216, 0.733);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* background-color: rgba(42, 104, 107, 0.589) ;  */
-  border-bottom-style: solid; }
+  /* background-color: rgba(42, 104, 107, 0.589) ;  */ }
 
 .logodiv {
   color: black;
@@ -59,10 +58,11 @@ button {
     color: #ceb751; }
 
 #backbutton {
+  font-size: 2.5vh;
   width: 10vw;
   position: absolute;
-  top: 18vh;
-  left: 7vw; }
+  top: 13vh;
+  left: 0.5vw; }
 
 /*!For the div that holds the main content on the page, i.e. the content in the centre */
 #maincontent {
@@ -71,7 +71,7 @@ button {
   align-content: center;
   justify-content: center;
   flex: 1 0 auto;
-  height: 84vh;
+  height: 84.3vh;
   background-color: rgba(50, 90, 102, 0.452); }
 
 /*!Stylings for the footers*/
@@ -99,7 +99,6 @@ footer {
   align-content: center; }
   #worldmap img, #sml img {
     padding: 0;
-    border-radius: 3vh;
     border: 0.9vh #a50404 solid; }
 
 #snowymountainsdino {

@@ -3,3 +3,4 @@
 *.psd 
 /Images/*
 /.vscode/*
+node_modules

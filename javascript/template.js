@@ -9,7 +9,7 @@ let hovering = {
 };
 
 //Mappings for the back button 
-//Better way, record prev location, then go back to that 
+//TODO Better way, record prev location, then go back to that 
 let locationmappings = {
     //Snowy Mountains Dinosuar -> Snowy Mountains Location
     "smdt": "smlt",
@@ -61,6 +61,8 @@ function clickonloc(element, locationname) {
     });
 };
 
+//Loading a location section 
+//TODO implement better way of going from dinosaur -> location, instead of reredending everything, just remove dinosaur
 function loadLocation(locationname){
         clearMainSection();
         loadScreenpart(locationname);
@@ -85,10 +87,8 @@ function clickondino(element, dinoname) {
 
 
 //Clears all the elements in the main content section 
-function clearMainSection() {
-    document.getElementById("maincontent").innerHTML = "";
-};
-
+const clearMainSection = () => document.getElementById("maincontent").innerHTML = "";
+ 
 //Loads a specific area from an ID 
 function loadScreenpart(templateID) {
     let temp = document.getElementById(templateID);
@@ -96,6 +96,7 @@ function loadScreenpart(templateID) {
     document.getElementById("maincontent").append(clon);
 };
 
+//Function to load the world map
 function loadWorldMap() {
 
     //Clearing the main section just in case there is something there, then loading the world map 

@@ -1,6 +1,7 @@
 // Setting up imports
 $primary-color: #a59656;
-$secondary-color: rgba(255, 255, 255, 0.527);
+// $secondary-color: rgba(255, 255, 255, 0.527);
+$secondary-color: rgba(216, 216, 216, 0.733);
 $border-color: rgb(165,4,4);
 $snowymountainscolor : rgb(111, 200, 235);
 
@@ -31,6 +32,7 @@ ul {
 }
 
 /*!Setting up the parts in the navigation bar*/
+//TODO come up with nice looking background-color 
 nav {
 	font-family: "Aquifer";
 	height: 12vh;
@@ -38,8 +40,9 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	/* background-color: rgba(42, 104, 107, 0.589) ;  */
-	border-bottom-style: solid;
+    /* background-color: rgba(42, 104, 107, 0.589) ;  */
+    //TODO Come up with a nice looking nav bar 
+	// border-bottom-style: solid;
 }
 
 .logodiv {
@@ -64,7 +67,7 @@ h1 {
     padding: 0;
 }
 
-//TODO fix alginment of text in buttons 
+//TODO fix alignment of text so that it is centered in button 
 button {
     font-family: Aquifer; 
 	justify-content: center;
@@ -83,10 +86,11 @@ button {
 
 //Back button
 #backbutton { 
+    font-size: 2.5vh;
     width: 10vw;
     position: absolute;
-    top: 18vh; 
-    left: 7vw;
+    top: 13vh; 
+    left: 0.5vw;
 }
 
 /*!For the div that holds the main content on the page, i.e. the content in the centre */
@@ -96,7 +100,7 @@ button {
     align-content: center; 
     justify-content: center; 
     flex: 1 0 auto; 
-    height: 84vh; 
+    height: 84.3vh; 
     background-color: rgba(50, 90, 102, 0.452); 
 }
 
@@ -132,9 +136,7 @@ footer {
     align-items: center;
     align-content: center; 
     img {
-        // align-self: center;
         padding: 0; 
-        border-radius: 3vh;
         border: 0.9vh $border-color solid;
     }
 }
@@ -184,7 +186,6 @@ footer {
 /*! Snowy mountains CSS */
 
 /*! Location part */
-//TODO fix issue where background gets push to side and then repeats 
 #sml {
     @extend %maincontentimages;
     // height: 75vh; 
