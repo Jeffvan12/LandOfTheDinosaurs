@@ -2,7 +2,7 @@
     "typeAcquisition": {
         "include": [
             "jquery",
-            "rwdImageMaps",
+            "ng-maphilight",
         ]
     }
 

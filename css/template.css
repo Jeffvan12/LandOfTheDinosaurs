@@ -3,7 +3,7 @@
   src: url(../Fonts/Aquifer.ttf); }
 body {
   margin: 0px;
-  background-image: url(../Images/Backgrounds/Goodgreenedit.png);
+  background-image: url(../Images/Backgrounds/Goodgreenedit.jpg);
   background-size: 40vw; }
 
 .container {
@@ -25,24 +25,25 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* background-color: rgba(42, 104, 107, 0.589) ;  */ }
-
-.logodiv {
-  color: black;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-size: 5vh; }
-  .logodiv img {
-    height: 11vh;
-    width: auto; }
-    .logodiv img:hover {
-      cursor: grab; }
-
-/*!Removing margin from all h1 elements*/
-h1 {
-  margin: 0;
-  padding: 0; }
+  /* background-color: rgba(42, 104, 107, 0.589) ;  */
+  /*!Area where logo and DINOTOPIA are held */
+  /*!Removing margin from all h1 elements*/ }
+  nav .logodiv {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 5vh; }
+    nav .logodiv img {
+      height: 11vh;
+      width: auto; }
+      nav .logodiv img:hover {
+        cursor: grab; }
+  nav h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 5vh;
+    height: 5vh; }
 
 button {
   font-family: Aquifer;
@@ -58,7 +59,7 @@ button {
     color: #ceb751; }
 
 #backbutton {
-  font-size: 2.5vh;
+  font-size: 3.0vh;
   width: 10vw;
   position: absolute;
   top: 13vh;
