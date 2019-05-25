@@ -72,7 +72,6 @@ function clickondino(element, dinoname) {
         loadScreenpart(dinoname);
         cleanBackButton();
         document.getElementById("backbutton").addEventListener("click", () => loadLocation(locationmappings[dinoname]));
-        $("#shader").toggleClass("shade");
     });
 };
 
@@ -102,7 +101,7 @@ function loadWorldMap() {
     flashing("#wmora", "000000");
     hoverNew("#wmsma", "555555", "000000");
 
-    //Loading the area highlighting, have delay due to it not working correctly as it loaded too quickly 
+    //Loading the area highlighting, have delay due to it not working correctly as it is loaded too quickly 
     setTimeout(() => $('#mapping').maphilight(), 50)
 
     //Loading the world map area events, so that when you click on an area tag you go to that location 

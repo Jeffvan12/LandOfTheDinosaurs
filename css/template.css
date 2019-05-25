@@ -1,6 +1,6 @@
 @font-face {
   font-family: Aquifer;
-  src: url(../Fonts/Aquifer.ttf); }
+  src: url(../Fonts/TheRustic-Demo.ttf); }
 body {
   margin: 0px;
   background-image: url(../Images/Backgrounds/Goodgreenedit.jpg);
@@ -59,11 +59,12 @@ button {
     color: #ceb751; }
 
 #backbutton {
-  font-size: 3.0vh;
+  font-size: 3vh;
   width: 10vw;
   position: absolute;
   top: 13vh;
-  left: 0.5vw; }
+  left: 0.5vw;
+  z-index: 2; }
 
 /*!For the div that holds the main content on the page, i.e. the content in the centre */
 #maincontent {
@@ -80,11 +81,12 @@ footer {
   flex-shrink: 0;
   display: flex;
   text-align: center;
-  font-size: 2.2vh;
   margin-top: auto;
   height: 3.7vh;
   color: #a59656;
   background-color: black; }
+  footer li {
+    font-size: 2.3vh; }
 
 .footerlist {
   margin: 0; }
@@ -101,26 +103,6 @@ footer {
   #worldmap img, #sml img {
     padding: 0;
     border: 0.9vh #a50404 solid; }
-
-#snowymountainsdino {
-  position: absolute;
-  left: 5vh;
-  bottom: 5vh;
-  right: 10vw; }
-  #snowymountainsdino img {
-    height: 56vh;
-    padding: 0;
-    border-radius: 3vh;
-    border: 0.9vh #c1c1eb solid; }
-
-/*!Shading for when the dinosaur appears */
-.shade {
-  width: 100%;
-  height: 84.4vh;
-  background: rgba(8, 36, 49, 0.589);
-  position: absolute;
-  top: 12vh;
-  left: 0; }
 
 /*! CSS for the world map part */
 #worldmap {
@@ -147,7 +129,33 @@ footer {
     object-fit: cover; }
 
 /*!Dinosaur part*/
-#snowymountainsdino img {
-  border-color: #6fc8eb; }
+#smd {
+  position: absolute;
+  background: rgba(8, 36, 49, 0.589);
+  width: 100vw;
+  height: 84.3vh; }
+  #smd .title {
+    position: absolute;
+    width: fit-content;
+    top: 4vh;
+    padding: 1vh;
+    /*! Centering the element */
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 5vw;
+    background-color: black;
+    border-radius: 1vh;
+    color: #a59656; }
+    #smd .title:hover {
+      color: #ceb751; }
+  #smd .image {
+    position: absolute;
+    left: 5vh;
+    bottom: 5vh;
+    height: 56vh;
+    padding: 0;
+    border-radius: 3vh;
+    border: 0.9vh solid #6fc8eb; }
 
 /*# sourceMappingURL=template.css.map */
