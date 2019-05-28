@@ -15,6 +15,14 @@ let dinocode = {
     "smlt": () => clickondino(".smda", "smdt"),
 };
 
+//Locations unlocked 
+let locationsunlocked = [];
+
+
+//Questions for the quiz, with the location as the key, the list going Question, correct answer, wrong anwers .... 
+let locationquestions = {
+    "smlt": ["What era did the snowy mountains dinosaur live in", "Oligocene", "Jurrasic", "Crustase"]
+}
 
 
 //Initial loading of the website  
@@ -30,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //Function to make it easy to highlight an area on the world map screen
 function highLightArea(element, startcolour) {
-    $(element).data('maphilight', { "stroke": false, "strokeWidth": 2.3, "strokeColor": '000000', "fillColor": startcolour, "fillOpacity": 0.4, "alwaysOn": true });
+    $(element).data('maphilight', { "stroke": false, "strokeWidth": 2.3, "strokeColor": 000000, "fillColor": startcolour, "fillOpacity": 0.4, "alwaysOn": true });
     $('#mapping').maphilight();
 }
 
@@ -61,7 +69,7 @@ function loadLocation(locationname) {
     loadTemplate("smqit");
     document.getElementById("quizicon").addEventListener("click", () => {
         if (!document.getElementById("quiz")) {
-            setupQuiz();
+            setupQuiz(locationname);
         }
     });
 }
@@ -129,18 +137,59 @@ function cleanBackButton() {
 
 
 //Setting up the quiz once its loaded
-function setupQuiz() {
+function setupQuiz(location) {
     loadTemplate("quizt")
+
+    //Populating the quiz template with the question and answers  
+
+    document.getElementById("quizquestion").innerHTML = locationquestions[location][0];
+
+    let answers = locationquestions[location].slice(1);
+    let correctanswer = answers[0];
+
+    //Randomising the order of the answers
+    answers = shuffle(answers);
+    //Getting the unordered list where the list items will be added to 
+    let ul = document.getElementById("quizanswers");
+    //Looping through the answers 
+    answers.forEach(answer => {
+        let li = document.createElement("li");
+        //Setting the text of the list item  
+        li.innerHTML = answer;
+        //Checking if the answer is correct 
+        li.addEventListener("click", () => {
+            if (answer === correctanswer) {
+                console.log("Correct answer");
+            } else {
+                console.log("Wrong answer")
+            }
+        })
+        ul.appendChild(li);
+    });
 
     //Adding event to close button
     document.getElementById("closebutton").addEventListener("click", () => {
         document.getElementById("quiz").remove();
     })
-
-
-    let ul = document.getElementById("quizlist");
-    let items = ul.getElementsByTagName("li");
-    for (let i = 0; i < items.length; i++) {
-        items[i].addEventListener("click", () => console.log("Hey", i));
-    }
 }
+
+//Shuffle code to randomise order of answers, made by Chris Ferdinandi
+var shuffle = function (array) {
+
+    var currentIndex = array.length;
+    var temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+};
