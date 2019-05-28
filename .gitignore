@@ -4,3 +4,7 @@
 /Images/*
 /.vscode/*
 node_modules
+*.json
+/.vscode/*
+/.idea/*
+.gitignore

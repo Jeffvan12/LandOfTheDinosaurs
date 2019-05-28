@@ -12,6 +12,7 @@
 <body>
     <div class="container">
         <nav>
+            <!-- TODO make clickable so that it takes you to the worldmap screen -->
             <div class="logodiv">
                 <img src="/Images/LogoR.png" alt="">
                 <h1>DINOTOPIA</h1>
@@ -73,20 +74,45 @@
         </template>
 
         <!-- Snowy Mountains dinosaur template  -->
+        <!-- TODO make information not plagerised and add references to info.  -->
         <template id="smdt">
             <div id="smd">
                 <h1 class="title">Paraceratherium </h1>
 
                 <img class="image" src="/Images/Locations/Snowy 2 Dino changed.jpg" alt="">
 
-
                 <section class="info">
+                    <p>
+                        <strong>Weight:</strong> 15 to 20 tonnes <br>
+                        <strong>Height:</strong> About 4.8 metres <br>
+                        <strong>Length</strong> About 7.4 metres <br> <br>
 
+                        The Paraceratherium was a herbivore that lived in the early to late Oligocene epoch (34-23 million years ago). It lived in many habitats, from desert to dense forests. 
+                    </p>
                 </section>
 
             </div>
 
         </template>
+        
+        <template id="smqit">
+            <img src="Images/Logos/Skull.png" id="quizicon" alt="">
+        </template>
+
+        <template id="quizt">
+            <div id="quiz">
+                <button id="closebutton">X</button>
+                <h3>What era did the snowy mountains dinosaur live in?</h4>
+                <ul id="quizlist">
+                    <li>Jurrasic</li>
+                    <li>Oligocene</li>
+                    <li>Crustase</li>
+                </ul>
+            </div>
+        </template>
+
+
+
 
 
 
@@ -99,8 +125,7 @@
                 <li>References</li>
             </ul>
         </footer>
-
-
+    
     </div>
     <script src="javascript/jquery.min.js"></script>
     <!-- Used to place areas in the correct location, created by Matt Stow-->
