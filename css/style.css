@@ -1,0 +1,89 @@
+/*! Main style sheet, for the main content and navigation bar and footer */
+@font-face {
+  font-family: Aquifer;
+  src: url(../Fonts/Aquifer.ttf); }
+body {
+  margin: 0; }
+
+.container {
+  display: flex;
+  flex-direction: column; }
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none; }
+
+/*!Setting up the parts in the navigation bar*/
+nav {
+  font-family: "Aquifer";
+  height: 12vh;
+  background-color: rgba(216, 216, 216, 0.733);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*!Area where logo and DINOTOPIA are held */
+  /*!Removing margin from all h1 elements*/ }
+  nav .logodiv {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 5vh;
+    cursor: pointer; }
+    nav .logodiv img {
+      height: 11vh;
+      width: auto; }
+  nav h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 5vh;
+    height: 5vh; }
+
+button {
+  font-family: Aquifer;
+  justify-content: center;
+  color: #a59656;
+  font-size: 3.2vh;
+  margin: 0 1vh;
+  padding: 1vh;
+  border-radius: 2vh;
+  background-color: black;
+  border: solid #a50404 0.5vh; }
+  button:hover {
+    color: #ceb751;
+    cursor: pointer; }
+
+/*!For the div that holds the main content on the page, i.e. the content in the centre */
+#maincontent {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex: 1 0 auto;
+  height: 84.3vh;
+  background-color: rgba(1, 41, 8, 0.404); }
+
+/*!Stylings for the footers*/
+footer {
+  flex-shrink: 0;
+  display: flex;
+  text-align: center;
+  margin-top: auto;
+  height: 3.7vh;
+  color: #a59656;
+  background-color: black; }
+  footer li {
+    font-size: 2.3vh; }
+  footer a {
+    text-decoration: none;
+    color: #a59656; }
+
+.footerlist {
+  margin: 0; }
+  .footerlist li {
+    padding: 0 2vw; }
+
+/*# sourceMappingURL=style.css.map */

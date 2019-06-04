@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/collection.css">
+    <title>Collection</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <!-- TODO make clickable so that it takes you to the worldmap screen -->
+            <div class="logodiv" id="logodiv">
+                <img src="Images/LogoR.png" alt="">
+                <h1>DINOTOPIA</h1>
+            </div>
+            <div>
+                <button id="worldmapbutton">WORLD MAP</button>
+                <button id="collectionbutton">COLLECTION</button>
+            </div>
+        </nav>
+
+
+
+        <!-- Div where templates go -->
+        <div id="maincontent">
+        <button id="unlockedbutton"></button>
+        </div>
+
+
+        <template id="smdt">
+            <img id = "smd" src="Images/Dinosaurs/collectionparacer.jpg" alt="">
+        </template>
+        <template id="ordt">
+            <img id = "ord" src="Images/Dinosaurs/collectiontrex.jpg" alt="">
+        </template>
+
+        <footer>
+            <ul class="footerlist">
+                <li><a href="about.html">About</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <script src="javascript/jquery.min.js"></script>
+    <!-- Used to place areas in the correct location, created by Matt Stow-->
+    <script src="javascript/jquery.rwdImageMaps.min.js"></script>
+    <!-- Used to fill in area tags, created by David Lynch -->
+    <script src="javascript/jquery.maphilight.min.js"></script>
+    <!-- <script src="javascript/maphilight.js"></script> -->
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>

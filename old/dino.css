@@ -5,7 +5,7 @@
 
 body { 
     margin: 0px; 
-    background-image: url(Images/Backgrounds/Goodgreenedit.png);
+    background-image: url(../Images/Backgrounds/Goodgreenedit.png);
 background-size: 40vw;
 }
 
@@ -91,7 +91,7 @@ h1 {
     display: flex; 
     justify-content: center; 
     align-content: center; 
-    height: 74vh;  
+    height: 78vh;  
     margin: 0vh 5vh 4vh 5vh;
     /* border-style: solid;  */
     /* border-color: rgb(165, 4, 4) ;  */
@@ -106,9 +106,9 @@ h1 {
 
 .filler img {
     width: 84.5vw;
-    height: 74vh;
+    height: 67vh;
     border-radius: 3vh;
-    border: solid rgb(165, 4, 4) 1vh;
+    border: solid rgb(111, 200, 235) 1vh;
     align-self: center;
     padding: 0; 
 }

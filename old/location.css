@@ -5,7 +5,7 @@
 
 body { 
     margin: 0px; 
-    background-image: url(Images/Backgrounds/Goodgreenedit.png);
+    background-image: url(../Images/Backgrounds/Goodgreenedit.png);
     background-size: 40vw;
 }
 
@@ -71,6 +71,7 @@ h1 {
 
 .filler { 
     display: flex; 
+    height: 84vh; 
     flex-direction: column;
     justify-content: center; 
     align-content: center; 
@@ -112,7 +113,7 @@ h1 {
 .filler img {
     width: 64.5vw;
     border-radius: 3vh;
-    border: solid rgb(165, 4, 4) 1vh;
+    border: solid rgb(111, 200, 235) 1vh;
     align-self: center;
     padding: 0; 
 }
@@ -132,7 +133,7 @@ footer {
 }
 
 .footerlist li {
-    padding: 0 30px; 
+    padding: 0 15px; 
     align-items: center; 
     align-items: center; 
     align-items: center; 

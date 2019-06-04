@@ -1,0 +1,200 @@
+/*! CSS for the world map screen */
+body {
+  background-image: url(../Images/Backgrounds/Goodgreenedit.jpg);
+  background-size: 40vw; }
+
+/*! CSS for back button */
+#backbutton {
+  font-size: 3vh;
+  width: 10vw;
+  position: absolute;
+  top: 12.65vh;
+  left: 0.5vw;
+  z-index: 2; }
+
+/*! CSS for the WORLD MAP, LOCATIONS and DINOSAUR screens */
+#worldmap, #sml, #orl, #ord {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  #worldmap img, #sml img, #orl img, #ord img {
+    padding: 0;
+    border: 0.9vh #a50404 solid; }
+
+#sml, #orl, #ord {
+  margin: 0; }
+  #sml img, #orl img, #ord img {
+    height: 75vh;
+    width: 100vw;
+    border-radius: 0;
+    border: none;
+    object-fit: cover; }
+
+/*! CSS for the world map part */
+#worldmap {
+  border: 0.9vh #a50404 solid;
+  margin: 0vh 10vh 0vh 10vh;
+  height: 74vh;
+  border-radius: 1.1vh;
+  background: radial-gradient(circle, #c0e0ef 45%, #177ead 100%); }
+  #worldmap img {
+    height: 68vh;
+    border: none; }
+
+/*! Snowy mountains CSS */
+/*! Location part */
+#sml {
+  border-top: #d8d8d8 solid 0.9vh;
+  border-bottom: #d8d8d8 solid 0.9vh; }
+
+/*!Dinosaur CSS */
+#smd {
+  position: absolute;
+  background: rgba(8, 36, 49, 0.589);
+  width: 100vw;
+  height: 84.3vh; }
+  #smd .title {
+    position: absolute;
+    text-align: center;
+    top: 6vh;
+    padding: 0.1vh 2vh;
+    /*! Centering the element */
+    left: 0;
+    right: 0;
+    margin: 0;
+    font-size: 8vh;
+    background-color: rgba(0, 0, 0, 0.719);
+    color: #8cabbd; }
+    #smd .title:hover {
+      color: #75b0d3; }
+  #smd .image {
+    position: absolute;
+    left: 5vh;
+    top: 16.5vh;
+    height: 56vh;
+    padding: 0;
+    border-radius: 1.2vh;
+    border: 0.9vh solid #d8d8d8; }
+  #smd .info {
+    position: absolute;
+    top: 16.5vh;
+    right: 5vh;
+    width: 35vw;
+    background: rgba(255, 255, 255, 0.657);
+    font-size: 3vh;
+    padding: 2vh;
+    border-radius: 1.2vh;
+    border: 0.9vh solid #d8d8d8; }
+
+/*! Quiz icon that loads quiz when clicked */
+#smquizicon {
+  position: absolute;
+  max-width: 65px;
+  width: 65px;
+  height: auto;
+  left: 20vw;
+  bottom: 20vh;
+  animation: skullshake 1.5s infinite alternate linear; }
+  #smquizicon:hover {
+    cursor: pointer; }
+
+@keyframes skullshake {
+  0% {
+    transform: rotate(-10deg); }
+  100% {
+    transform: rotate(20deg); } }
+/*! Outer Region CSS */
+/*! Outer Region Location CSS */
+#orl {
+  border-top: #065306 solid 0.9vh;
+  border-bottom: #065306 solid 0.9vh; }
+
+/*! Outer region dinosaur CSS*/
+#ord {
+  border-top: #065306 solid 0.9vh;
+  border-bottom: #065306 solid 0.9vh; }
+  #ord .title {
+    position: absolute;
+    text-align: center;
+    top: 20vh;
+    padding: 0.1vh 2vh;
+    /*! Centering the element */
+    left: 0;
+    right: 0;
+    margin: 0;
+    font-size: 8vh;
+    background-color: rgba(0, 0, 0, 0.719);
+    color: #4ca158; }
+    #ord .title:hover {
+      color: #3fa536; }
+  #ord .info {
+    position: absolute;
+    top: 45vh;
+    left: 2vh;
+    width: 35vw;
+    background: rgba(255, 255, 255, 0.842);
+    font-size: 3vh;
+    padding: 2vh;
+    border-radius: 1.2vh;
+    border: 0.9vh solid #065306; }
+
+/*! Outer region quiz icon that shows the quiz */
+#orquizicon {
+  position: absolute;
+  max-width: 55px;
+  width: 55px;
+  right: 22vw;
+  bottom: 40vh;
+  animation: idolpulse 1.5s infinite alternate ease-in-out; }
+
+@keyframes idolpulse {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.05); } }
+/*! QUIZ CSS */
+#quiz {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  font-size: 2.5vh;
+  color: #98d2e9;
+  width: 30vw;
+  background-color: rgba(0, 0, 0, 0.781);
+  left: 40vw;
+  border-radius: 2vh;
+  /*! Close button on quiz css*/ }
+  #quiz h3 {
+    margin: 2vh 2vw 0 2vw; }
+  #quiz ul {
+    display: flex;
+    margin: 1vh;
+    padding: 0;
+    flex-direction: column;
+    list-style: disc; }
+  #quiz li {
+    font-size: 3vh;
+    font-weight: bold;
+    color: #eed35d;
+    padding: 0.8vh;
+    margin: 0;
+    cursor: pointer; }
+  #quiz #closebutton {
+    display: flex;
+    flex-direction: column;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 2.5vh;
+    right: -1.5vh;
+    top: -1.5vh;
+    width: 4vh;
+    margin: 0;
+    height: 4vh; }
+
+/*# sourceMappingURL=worldmap.css.map */

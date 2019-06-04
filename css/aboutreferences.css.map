@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,4CAA4C;AAI5C,IAAI;EACH,gBAAgB,EAAE,4CAA4C;EAC9D,eAAe,EAAE,IAAI;;AAGtB,YAAY;EACR,MAAM,EAAE,IAAI;EACZ,SAAS,EAAE,IAAI;EAEf,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,KAAK;EACd,MAAM,EAAE,mBAAyB;EACjC,aAAa,EAAE,GAAG;EAElB,gBAAgB,EAAE,0BAA0B",
+"sources": ["aboutreferences.scss"],
+"names": [],
+"file": "aboutreferences.css"
+}

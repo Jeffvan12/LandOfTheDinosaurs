@@ -1,11 +1,11 @@
 @font-face {
     font-family: Aquifer; 
-    src: url('/Fonts/Aquifer.ttf')
+    src: url('..//Fonts/Aquifer.ttf')
 }
 
 body { 
     margin: 0px; 
-    background-image: url(Images/Backgrounds/Goodgreenedit.png);
+    background-image: url(../Images/Backgrounds/Goodgreenedit.png);
 background-size: 40vw;
 }
 
@@ -73,7 +73,7 @@ h1 {
     /* display: flex;  */
     /* justify-content: center;  */
     align-content: center; 
-    height: 60vh; 
+    height: 56vh; 
     padding: 3vh;
     margin: 6vh 10vh 12vh 10vh;
     font-family: 'Aquifer';
