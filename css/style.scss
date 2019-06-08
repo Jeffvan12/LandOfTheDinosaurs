@@ -1,4 +1,4 @@
-/*! Main style sheet, for the main content and navigation bar and footer */
+/*! Main style sheet, for the main content, navigation bar and footer */
 
 // Setting up colours
 $primary-color: #a59656;
@@ -6,25 +6,25 @@ $primary-color: #a59656;
 $secondary-color: rgba(216, 216, 216, 0.733);
 $border-color: rgb(165, 4, 4);
 
+/*!Setting up the font face*/
 @font-face {
 	font-family: Aquifer;
 	src: url(../Fonts/Aquifer.ttf);
-	// src: url(../Fonts/Aquifer.ttf);
 }
 
-//Setting up the body of the website
-
+/*! Setting up the body of the website */
 body{ 
 	margin: 0; 
 }
 
-
+/*! Setting up the website so it flows down the screen  */
 .container {
 	display: flex;
 	flex-direction: column;
+	min-height: 100vh;
 }
 
-//Setting up lists for the site
+/*! Changing the style for all the lists */
 ul {
 	display: flex;
 	flex-direction: row;
@@ -65,6 +65,7 @@ nav {
 	}
 }
 
+/*! Styling for all buttons */
 button {
 	font-family: Aquifer;
 	justify-content: center;
@@ -75,9 +76,9 @@ button {
 	border-radius: 2vh;
 	background-color: black;
 	border: solid $border-color 0.5vh;
+	cursor: pointer;
 	&:hover {
 		color: #ceb751;
-		cursor: pointer;
 	}
 }
 
@@ -96,7 +97,6 @@ button {
 }
 
 /*!Stylings for the footers*/
-//TODO increase font size
 footer {
 	flex-shrink: 0;
 	display: flex;
@@ -118,7 +118,6 @@ footer {
 
 .footerlist {
 	margin: 0;
-
 	li {
 		padding: 0 2vw;
 	}

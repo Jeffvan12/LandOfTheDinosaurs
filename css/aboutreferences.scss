@@ -1,20 +1,27 @@
 /*! CSS for the about and reference pages */
 
 $border-color: rgb(165, 4, 4);
+$med-screen: 1500px;
 
-body{
+body {
 	background-image: url(../Images/Backgrounds/Goodgreenedit.jpg);
 	background-size: 40vw;
 }
 
-#textcontent{
-    height: 76vh; 
-    font-size: 30px; 
-    // width: 50vw; 
-    margin: 0 15vw; 
-    padding: 0 2vw; 
-    border: 0.7vh solid $border-color;
-    border-radius: 1vh;
-    // font-weight: 700;
-    background-color: rgba(255, 255, 255, 0.699); 
+#maincontent {
+	height: fit-content;
+	height: -moz-max-content;
+}
+
+/*! The text shown in the main content */
+#textcontent {
+	margin: 5vh 8vw;
+	min-height: 73vh;
+	height: fit-content;
+	height: -moz-max-content;
+	font-size: 1.7rem;
+	padding: 0 2vw;
+	border: 0.7vh solid $border-color;
+	border-radius: 1vh;
+	background-color: rgba(255, 255, 255, 0.699);
 }

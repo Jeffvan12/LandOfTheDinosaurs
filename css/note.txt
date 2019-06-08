@@ -1,0 +1,21 @@
+The more readable CSS files are the .scss files. These files are sass, which is a version of CSS that adds some features which improve readability, structure ,and maintainability, these files still compile down the CSS.
+The CSS files are still commented and have some structure to them, but the .scss files have a much better structure to them due to some features that SASS adds, mainly classes which allows this 
+
+div {
+    Some content 
+} 
+
+div img {
+    CSS for the img in the div 
+}
+
+to be written as 
+
+div {
+    Some content 
+
+    img { 
+        CSS for the img in the div
+    }
+}
+ 

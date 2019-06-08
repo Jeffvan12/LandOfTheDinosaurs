@@ -1,37 +1,53 @@
 /*! CSS for the collection page */
+
 body {
   margin: 0px;
   background-image: url(../Images/Backgrounds/good\ blue.jpg);
-  background-size: 48vw; }
+  background-size: 48vw;
+}
 
-/*! TODO add a different background  */
 #maincontent {
-  padding: 4vh;
+  padding-top: 5vh;
+  padding-right: 4vw;
+  padding-left: 3vw;
+  /*! Using grid layout to show images in a grid */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 38.15vh);
   grid-gap: 5vh;
-  height: 76.3vh;
+  height: 79.3vh;
   background-color: rgba(0, 0, 0, 0.253);
-  /*! Selecting the snowy mountains dinosaur */
-  /*! Selecting the outer region dinosaur */ }
-  #maincontent img {
-    border: solid 1vh;
-    border-radius: 1vh;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-    #maincontent img:hover {
-      cursor: pointer; }
-  #maincontent #smd {
-    border-color: #d8d8d8; }
-  #maincontent #ord {
-    border-color: #065306; }
-  #maincontent #unlockedbutton {
-    position: absolute;
-    border: none;
-    border-radius: 0.5vh;
-    top: 13vh;
-    right: 0; }
+}
+
+/*! CSS for all the grid pictures */
+#maincontent img {
+  border: solid 1vh;
+  border-radius: 1vh;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*! Selecting the snowy mountains dinosaur */
+
+#maincontent #smd {
+  border-color: #d8d8d8;
+}
+
+/*! Selecting the outer region dinosaur */
+
+#maincontent #ord {
+  border-color: #065306;
+}
+
+/*! CSS for the dinosaurs seen element */
+
+#maincontent #unlockedbutton {
+  position: absolute;
+  border: none;
+  border-radius: 0.5vh;
+  top: 13vh;
+  right: 0;
+}
 
 /*# sourceMappingURL=collection.css.map */

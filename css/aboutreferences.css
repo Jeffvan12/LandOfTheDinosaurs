@@ -1,15 +1,26 @@
 /*! CSS for the about and reference pages */
+
 body {
-  background-image: url(../Images/Backgrounds/Goodgreenedit.jpg);
-  background-size: 40vw; }
+	background-image: url(../Images/Backgrounds/Goodgreenedit.jpg);
+	background-size: 40vw;
+}
+
+#maincontent {
+	height: fit-content;
+	height: -moz-max-content;
+}
+
+/*! The text shown in the main content */
 
 #textcontent {
-  height: 76vh;
-  font-size: 30px;
-  margin: 0 15vw;
-  padding: 0 2vw;
-  border: 0.7vh solid #a50404;
-  border-radius: 1vh;
-  background-color: rgba(255, 255, 255, 0.699); }
+	margin: 5vh 8vw;
+	min-height: 73vh;
+	height: fit-content;
+	height: -moz-max-content;
+	font-size: 1.7rem;
+	padding: 0 2vw;
+	border: 0.7vh solid #a50404;
+	border-radius: 1vh;
+	background-color: rgba(255, 255, 255, 0.699);
+}
 
-/*# sourceMappingURL=aboutreferences.css.map */

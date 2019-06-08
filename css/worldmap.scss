@@ -10,6 +10,7 @@ $snowymountainscolor: rgb(216, 216, 216);
 $outergresioncolor: rgb(6, 83, 6);
 
 
+/*!Adding background image*/
 body {
 	background-image: url(../Images/Backgrounds/Goodgreenedit.jpg);
 	background-size: 40vw;
@@ -30,6 +31,8 @@ body {
 /*! CSS for the WORLD MAP, LOCATIONS and DINOSAUR screens */
 
 //Classes to make life easier
+
+//Class for the images in the main content 
 %maincontentimages {
 	display: flex;
 	flex-direction: column;
@@ -42,6 +45,7 @@ body {
 	}
 }
 
+//Class for the Location image content 
 %locationcontent {
 	margin: 0;
 	img {
@@ -70,7 +74,7 @@ body {
 
 /*! Snowy mountains CSS */
 
-/*! Location part */
+/*! Snowy Mountains Location CSs */
 #sml {
 	@extend %maincontentimages;
 	@extend %locationcontent;
@@ -78,8 +82,7 @@ body {
 	border-bottom: $snowymountainscolor solid 0.9vh;
 }
 
-/*!Dinosaur CSS */
-//TODO put into a class so that it can easily be adapted to other dinosaur screen
+/*!Snowy Mountains Dinosaur CSS */
 #smd {
 	position: absolute;
 	background: rgba(8, 36, 49, 0.589);
@@ -103,28 +106,36 @@ body {
 		}
 	}
 
-	//TODO add a media query that centers the element at a certain screen size
 	.image {
 		position: absolute;
-		left: 5vh;
+		right:53% ;
 		top: 16.5vh;
-		height: 56vh;
+		width: 36vw;
+		max-height: 60vh;
 		padding: 0;
 
 		border-radius: 1.2vh;
 		border: 0.9vh solid $snowymountainscolor;
+		box-shadow: 0 15px 10px rgba(22, 22, 24, 0.479);
+
+		@media (max-aspect-ratio: 1366/1024) {
+			height: 50vh;
+			width: auto;	
+			right: 49%;
+		}
 	}
 
 	.info {
 		position: absolute;
 		top: 16.5vh;
-		right: 5vh;
+		left: 53%; 
 		width: 35vw;
 		background: rgba(255, 255, 255, 0.657);
 		font-size: 3vh;
 		padding: 2vh;
 		border-radius: 1.2vh;
 		border: 0.9vh solid $snowymountainscolor;
+
 	}
 }
 
@@ -137,9 +148,7 @@ body {
 	left: 20vw;
 	bottom: 20vh;
 	animation: skullshake 1.5s infinite alternate linear;
-	&:hover {
 		cursor: pointer;
-	}
 }
 
 @keyframes skullshake {
