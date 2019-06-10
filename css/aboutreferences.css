@@ -1,22 +1,21 @@
 /*! CSS for the about and reference pages */
-
 body {
 	background-image: url(../Images/Backgrounds/Goodgreenedit.jpg);
 	background-size: 40vw;
 }
 
 #maincontent {
-	height: fit-content;
-	height: -moz-max-content;
+	display: table !important;
 }
 
 /*! The text shown in the main content */
-
 #textcontent {
 	margin: 5vh 8vw;
+	height: 1px;
+	/* width: 1px;  */
+	/* min-width: 84vw;  */
+	display: table;
 	min-height: 73vh;
-	height: fit-content;
-	height: -moz-max-content;
 	font-size: 1.7rem;
 	padding: 0 2vw;
 	border: 0.7vh solid #a50404;

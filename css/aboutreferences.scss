@@ -9,16 +9,19 @@ body {
 }
 
 #maincontent {
-	height: fit-content;
-	height: -moz-max-content;
+	// height: fit-content;
+	display: table !important; 
+	// height: -moz-max-content;
 }
 
 /*! The text shown in the main content */
 #textcontent {
 	margin: 5vh 8vw;
+	// height: fit-content;
+	// height: -moz-max-content;
+	height: 1px;
+	display: table; 
 	min-height: 73vh;
-	height: fit-content;
-	height: -moz-max-content;
 	font-size: 1.7rem;
 	padding: 0 2vw;
 	border: 0.7vh solid $border-color;

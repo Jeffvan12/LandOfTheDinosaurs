@@ -230,7 +230,6 @@ body {
   background-color: rgba(0, 0, 0, 0.781);
   left: 40vw;
   border-radius: 2vh;
-  /*! Close button on quiz css*/
 }
 
 #quiz h3 {
@@ -254,6 +253,7 @@ body {
   cursor: pointer;
 }
 
+/*! Close button on quiz css*/
 #quiz #closebutton {
   display: flex;
   flex-direction: column;
