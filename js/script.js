@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     //Code for the world map page 
-    if (document.URL.includes("index.html") || location.pathname == "/") {
+    if (document.URL.includes("index.html") || location.pathname == "/" || location.pathname == "/DECO1400Website/") {
         loadWorldMap();
 
         //Reset maphilight if the window is resized 
